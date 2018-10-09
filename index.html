@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -117,45 +119,52 @@
 				    <div class="portfolio-slider">
 				        <div class="wrap">
 							        	 
-						            <a href="#">Все проекты</a>
-						            <a href="#">Дизайн интерьеров</a>
-						            <a href="#">Отделочные работы</a>
+						            <a href="#" class="category">Все проекты</a>
+						            <a href="#" class="category">Дизайн интерьеров</a>
+						            <a href="#" class="category">Отделочные работы</a>
+
 				
-				        		<div class="acordion">
+				        		<div class="acordion " id="slidertwo">
 
 				        			<div class="acordion-item">
 
 				        				<div class="img-title">
+				        					<a href="" class="btn-plus"></a>
 				        					<span class="img-title_top">Дизайн интерьера гостиной</span>
+
 				        					<span class="img-title_botom">Дизайн интерьера</span>
 				        				</div>
-				        				<div class="thumb">
-				        					<a href="" class="btn-plus"></a>
+				        				
+				        				
 				        					<img src="img/ac1.jpg" alt="">
-				        				</div>
+				        				
 				        			</div>
 				        			<div class="acordion-item">
 				        				<div class="img-title">
+				        					<a href="" class="btn-plus"></a>
 				        					<span class="img-title_top">Дизайн интерьера гостиной</span>
 				        					<span class="img-title_botom">Дизайн интерьера</span>
 				        				</div>
-				        				<div class="thumb"><img src="img/ac2.jpg" alt=""></div>
-				        			</div
+				        				<img src="img/ac2.jpg" alt="">
+				        			</div>
 
 				        			<div class="acordion-item">
 				        				<div class="img-title">
+				        					<a href="" class="btn-plus"></a>
 				        					<span class="img-title_top">Дизайн столовой в стиле «Бохо»</span>
 				        					<span class="img-title_botom">Дизайн интерьера</span>
 				        				</div>
-				        				<div class="thumb"><img src="img/ac3.jpg" alt=""></div>
+				        				<img src="img/ac3.jpg" alt="">
 				        			</div>
 				        			<div class="acordion-item">
 				        				<div class="img-title">
+				        					<a href="" class="btn-plus"></a>
 				        					<span class="img-title_top">Лофт интерьер для отеля Hiloft</span>
 				        					<span class="img-title_botom">Дизайн интерьера</span>
 				        				</div>
-				        				<div class="thumb"><img src="img/ac4.jpg" alt=""></div>
+				        				<img src="img/ac4.jpg" alt="">
 				        			</div>
+				        			
 				        		</div>
 				        </div>
 				       
@@ -202,28 +211,22 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+ 
   <script src="js/lighttabs.js"></script>
   
     <script type="text/javascript">
     $(document).ready(function(){
-     $('#slideone').slick({ // это изначально slick слайдер для основного блока изображений
-        slidesToShow: 1,  // по одному слайдеру 
-        slidesToScroll: 1, // по одному менять
+     $('#slideone').slick({ 
+        slidesToShow: 1,  
+        slidesToScroll: 1, 
         dots:true,
         autoplay:true,
         autoplaySpeed:5000,
-        arrows:false// включение стрелок (если не нужны false)
-         
-        /*asNavFor: '.slider-nav' // указываем что навигация для слайдера будет отдельно (указываем класс куда вешаем навигацию)*/
+        arrows:false
     });
-/*
-    $('.slider-nav').slick({ // настройка навигации
-        slidesToShow: 4, // указываем что нужно показывать 3 навигационных изображения
-        asNavFor: '.slider',// указываем что это навигация для блока выше
-        autoplay: true, 
-        focusOnSelect: true // указываем что бы слайделось по клику
-    });*/
+
     });
+    
     $(document).ready(function() {
     	var menuBtn = $('.ic-menu');
     	var menu = $('.nav-menu');
@@ -241,6 +244,7 @@
 });
 
   </script>
+  
   
 </body>
 </html>
