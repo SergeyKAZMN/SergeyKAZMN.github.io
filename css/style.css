@@ -368,6 +368,16 @@ body {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+}
+.wrap .list-category {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 .wrap .category {
   display: inline-block;
@@ -386,15 +396,7 @@ body {
   font-weight: 600;
 }
 
-.acordion {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  position: relative;
-}
-.acordion button {
+button {
   position: absolute;
   width: 5rem;
   height: 5rem;
@@ -406,22 +408,34 @@ body {
   border: none;
   z-index: 10;
 }
-.acordion button:hover {
+button:hover {
   cursor: pointer;
 }
-.acordion button:focus {
+button:focus {
   outline: none;
 }
-.acordion .prev {
+
+.prev {
   left: 2.5rem;
 }
-.acordion .next {
+
+.next {
   right: 2.5rem;
   background-position: 100% 100%;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
+.acordion {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  position: relative;
+}
+
 .acordion-item {
   width: 25%;
   height: 55rem;

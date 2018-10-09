@@ -429,6 +429,16 @@ body{
 				width:100%;
 				margin: 0 auto;
 				overflow: hidden;
+				position:relative;
+				.list-category{
+					list-style-type: none;
+					display: -webkit-box;
+					display: -webkit-flex;
+					display: -ms-flexbox;
+					display: flex;
+					padding: 0;
+					margin: 0;
+				}
 				.category{
 					display: inline-block;
 					font-size: 1.8rem;
@@ -449,22 +459,16 @@ body{
 				}
 				
 			}
-			.acordion{
-				display:-webkit-box;
-				display:-webkit-flex;
-				display:-ms-flexbox;
-				display:flex;
-				padding: 0;
-				position: relative;
-				button{
+				    button{
 					position: absolute;
 					width: 5rem;
 					height: 5rem;
 					top: 50%;
 					bottom: 50%;
-					background-color:transparent;
+					background-color: transparent;
 					background-image:url(../img/ars.png);
 					background-repeat:no-repeat;
+
 					border:none;
 					z-index: 10;
 					&:hover{
@@ -487,7 +491,20 @@ body{
 					        transform:rotate(180deg);
 					        
 				}
-				&-item{
+			.acordion{
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				padding: 0; 
+				position:relative;
+				
+			}
+				
+			
+
+				.acordion-item{
+					
 					width: 25%;
 					height: 55rem;
 					padding: 0;
@@ -521,7 +538,7 @@ body{
 
 				}
 	
-			}
+			
 			.btn-plus{
 				display: block;
 				width: 100%;
