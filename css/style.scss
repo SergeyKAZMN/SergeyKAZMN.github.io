@@ -457,9 +457,7 @@ body{
 					font-weight: 600;
 
 				}
-				
-			}
-				    button{
+			button{
 					position: absolute;
 					width: 5rem;
 					height: 5rem;
@@ -491,6 +489,9 @@ body{
 					        transform:rotate(180deg);
 					        
 				}
+				
+			}
+
 			.acordion{
 				display: -webkit-box;
 				display: -webkit-flex;

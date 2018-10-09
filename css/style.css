@@ -395,8 +395,7 @@ body {
   color: #112537;
   font-weight: 600;
 }
-
-button {
+.wrap button {
   position: absolute;
   width: 5rem;
   height: 5rem;
@@ -408,18 +407,16 @@ button {
   border: none;
   z-index: 10;
 }
-button:hover {
+.wrap button:hover {
   cursor: pointer;
 }
-button:focus {
+.wrap button:focus {
   outline: none;
 }
-
-.prev {
+.wrap .prev {
   left: 2.5rem;
 }
-
-.next {
+.wrap .next {
   right: 2.5rem;
   background-position: 100% 100%;
   -webkit-transform: rotate(180deg);
