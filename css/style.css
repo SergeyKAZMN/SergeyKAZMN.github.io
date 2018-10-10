@@ -334,36 +334,6 @@ body {
   color: #112537;
 }
 
-.tabs ul {
-  margin-bottom: 5rem;
-  padding: 0;
-  list-style: none;
-}
-.tabs ul li {
-  display: inline-block;
-  padding-bottom: 1rem;
-  margin-right: 6.5rem;
-  border-bottom: 1px solid transparent;
-  font-size: 1.8rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
-  color: #878684;
-}
-.tabs ul:hover {
-  cursor: pointer;
-  color: #112537;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-.tabs .active {
-  border-bottom: 1px solid #112537;
-  color: #112537;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .wrap {
   width: 100%;
   margin: 0 auto;
@@ -531,39 +501,108 @@ body {
   padding: 6rem 0 7rem;
 }
 .servis-title {
+  margin-top: 0;
+  margin-bottom: 7rem;
   font-family: "Playfair Display", serif;
   font-size: 4.5rem;
   color: #112537;
 }
-.servis .tab {
+
+.tabs {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-.servis .active {
-  padding-left: 3rem;
-  font-weight: 600;
-  color: #112537;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  overflow: hidden;
 }
 
-.tab-list {
+.tab-controls ul {
+  padding: 0;
+}
+.tab-controls .tab-item_active {
+  padding-left: 2.5rem;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: #112537;
+}
+
+.tab-item {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #878684;
+  margin-bottom: 9rem;
+}
+.tab-item:hover {
+  cursor: pointer;
+}
+
+.tab-content {
+  padding-left: 0.8rem;
+}
+
+.tab .thumb {
+  width: 100%;
+  height: 39rem;
+  margin-bottom: 7rem;
+  overflow: hidden;
+  position: relative;
+}
+.tab .thumb img {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+.tab-description {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
-.tab-list_item {
+.tab-description_title {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #112537;
+}
+.tab-description_index {
+  display: block;
+  margin-bottom: 7rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #112537;
+  vertical-align: bottom;
+}
+.tab-description_paragraph {
+  padding-right: 12rem;
   font-size: 1.8rem;
   font-weight: 300;
+  line-height: 3rem;
+  color: #878684;
+}
+.tab-description_btn {
+  padding: 2rem 6rem;
+  background-color: transparent;
+  border: 2px solid #112537;
+  font-size: 1.5rem;
+}
+.tab-description_btn:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-color: #f8a25a;
+  background-color: #f8a25a;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

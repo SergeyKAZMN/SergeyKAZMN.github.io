@@ -383,47 +383,6 @@ body{
 	}
 
 }
-.tabs{ 
-
-
-			ul{
-			    margin-bottom: 5rem;
-				padding: 0;
-				list-style: none;
-				li{
-				display: inline-block;
-				padding-bottom: 1rem;
-				margin-right: 6.5rem;
-				border-bottom:1px solid transparent;
-				font-size: 1.8rem;
-				font-weight: 300;
-				letter-spacing: 0.2rem;
-				color:$cText;
-
-
-
-				}
-				&:hover{
-					cursor:pointer;
-					color:$cback;
-					-webkit-transition:0.3s;
-					-o-transition:0.3s;
-					transition:0.3s;
-				}
-
-
-			    }
-			    .active{
-					border-bottom:1px solid $cback;
-					color:$cback;
-					-webkit-transition:0.3s;
-					-o-transition:0.3s;
-					transition:0.3s;
-			}
-
-
-			
-		}
 
 			.wrap{
 				width:100%;
@@ -620,44 +579,126 @@ body{
 
 .servis{
 	padding: 6rem 0 7rem;
-	&-title{
+	
+	&-title{margin-top: 0;
+		margin-bottom: 7rem;
 		font-family:$fontH;
 		font-size: 4.5rem;
 		color:$cback;
 
 	}
-	.tab{
+	
+}
+.tabs{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+}
+.tab-controls{
+	
+	ul{ 
+		
+		padding: 0;
+	}
+	        
+
+	        .tab-item_active{
+	        	padding-left: 2.5rem;
+	        		-webkit-transition:1s;
+	        		-o-transition:1s;
+	        		transition:1s;
+	        		color:$cback;
+
+	        }
+}
+
+.tab-item{
+	display:block;
+	
+	font-size: 1.8rem;
+	
+	font-weight: 300;
+
+	color:$cText;
+	
+	margin-bottom: 9rem;
+	
+	&:hover{
+		cursor:pointer;
+	}
+	
+}
+.tab-content{
+	padding-left: 0.8rem;
+
+}
+.tab{
+
+
+	.thumb{
+		width: 100%;
+		height: 39rem;
+		margin-bottom: 7rem;
+		overflow: hidden;
+		position:relative;
+		img{
+			-webkit-transform:translate(-50%,-50%);
+			    -ms-transform:translate(-50%,-50%);
+			        transform:translate(-50%,-50%);
+			-o-object-fit:cover;
+			   object-fit:cover;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+	&-description{
 		display:-webkit-box;
 		display:-webkit-flex;
 		display:-ms-flexbox;
 		display:flex;
 		
-	}
-	.active{       padding-left: 3rem;
-					font-weight: 600;
-					color:$cback;
-					-webkit-transition:0.3s;
-					-o-transition:0.3s;
-					transition:0.3s;
-			}
-}
-.tab-list{
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
-	-webkit-flex-direction:column;
-	    -ms-flex-direction:column;
-	        flex-direction:column;
-	       
-	        &_item{
-	        	font-size: 1.8rem;
-	        	font-weight: 300;
-	        	
-	        }
-}
-.tab-content{
+		        &_title{
+		        	margin-top: 0;
+		        	margin-bottom: 2.5rem;
+		        	font-family:$fontH;
+		        	font-size: 3rem;
+		        	color:$cback;
+		        }
+		        &_index{display: block;
+		        	margin-bottom: 7rem;
+		        	font-size: 1.8rem;
+		        	line-height: 3rem;
+		        	color:$cback;
+		        	vertical-align:bottom;
 
+		        }
+		        &_paragraph{
+		        	padding-right:12rem;
+		        	font-size: 1.8rem;
+		        	font-weight: 300;
+		        	line-height: 3rem;
+		        	color:$cText;
+		        }
+		        &_btn{padding: 2rem 6rem;
+		        	background-color:transparent;
+		        	border:2px solid $cback;
+		        	font-size: 1.5rem;
+		        	&:hover{
+		        		-webkit-transition:0.5s;
+		        		-o-transition:0.5s;
+		        		transition:0.5s;
+		        		border-color:$cBtn;
+		        		background-color:$cBtn;
+		        		color:#fff;
+		        		cursor:pointer;
+		        	}
+
+		        }
+	}
 }
