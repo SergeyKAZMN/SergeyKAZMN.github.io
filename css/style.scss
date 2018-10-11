@@ -863,3 +863,122 @@ body{
 		background-color:$cback;
 	}
 }
+.contacts{
+	height: 69rem;
+	position: relative;
+	background-image: url(../img/contact.jpg);
+	background-position:0 -17rem;
+
+	.contacts-container{
+		height: 100%;
+		background-color:$cback;
+		position: absolute;
+		z-index: 2;
+	}
+	.form{
+		padding-top: 2.3rem;
+		padding-left:6rem;
+		padding-right: 4rem;
+		&-title{
+			margin-bottom: 3rem;
+			font-family: $fontH;
+			font-size: 4.5rem;
+			font-weight: 700;
+			color:#fff;
+		}
+		&-paragraph{
+			margin-bottom: 2.5rem;
+			padding-right: 12rem;
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 2.4rem;
+			color: darken(#fff,40%);
+		}
+		input{
+			width: 100%;
+			margin-bottom: 3.5rem;
+			padding-bottom: 1.5rem;
+			border:none;
+			border-bottom:1px solid darken(#fff,50%);
+			font-size: 1.4rem;
+			color: darken(#fff,40%);
+			background-color:$cback;
+			
+			&:focus{
+				outline:none;
+			}
+		}
+		.icon{
+			position: relative;
+			&::before{
+				content:"";
+				display:block;
+				width: 2.5rem;
+				height: 2.5rem;
+				position: absolute;
+				top: 0%;
+				right: 0;
+				background: url(../img/form.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+			}
+
+		}
+		.name{
+			&::before{
+				background: url(../img/form.png);
+				background-repeat:no-repeat;
+				background-position:0px 0px;
+			}	
+
+		}
+		.phone{
+			&::before{
+				background: url(../img/form.png);
+				background-repeat:no-repeat;
+				background-position:0 -6.8rem;
+			}	
+
+		}
+				.mail{
+			&::before{
+				background: url(../img/form.png);
+				background-repeat:no-repeat;
+				background-position:0 -14.4rem;
+			}	
+
+		}
+		&-btn{
+			width: 100%;
+			padding: 2rem 0;
+			margin-bottom: 1rem;
+			background: transparent;
+			font-size: 1.5rem;
+			font-weight: 800;
+			text-transform:uppercase;
+			color:#fff;
+			letter-spacing: 0.2rem;
+			border-color:#fff;
+			-webkit-border-radius:0.5rem;
+			        border-radius:0.5rem;
+			        &:hover{
+			        	-webkit-transition:0.5s;
+			        	-o-transition:0.5s;
+			        	transition:0.5s;
+			        	cursor:pointer;
+			        	background-color:$cBtn;
+			        	border-color:transparent;
+			        }
+			        &:focus{
+			        	outline:none;
+			        }
+			        &:active{
+			        	-webkit-transition:0.5s;
+			        	-o-transition:0.5s;
+			        	transition:0.5s;
+			        	background-color: darken($cBtn,5%);
+			        }
+		}
+	}
+
+}

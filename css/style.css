@@ -757,4 +757,111 @@ body {
   background-color: #112537;
 }
 
+.contacts {
+  height: 69rem;
+  position: relative;
+  background-image: url(../img/contact.jpg);
+  background-position: 0 -17rem;
+}
+.contacts .contacts-container {
+  height: 100%;
+  background-color: #112537;
+  position: absolute;
+  z-index: 2;
+}
+.contacts .form {
+  padding-top: 2.3rem;
+  padding-left: 6rem;
+  padding-right: 4rem;
+}
+.contacts .form-title {
+  margin-bottom: 3rem;
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.contacts .form-paragraph {
+  margin-bottom: 2.5rem;
+  padding-right: 12rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #999999;
+}
+.contacts .form input {
+  width: 100%;
+  margin-bottom: 3.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 1.4rem;
+  color: #999999;
+  background-color: #112537;
+}
+.contacts .form input:focus {
+  outline: none;
+}
+.contacts .form .icon {
+  position: relative;
+}
+.contacts .form .icon::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  background: url(../img/form.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+.contacts .form .name::before {
+  background: url(../img/form.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+.contacts .form .phone::before {
+  background: url(../img/form.png);
+  background-repeat: no-repeat;
+  background-position: 0 -6.8rem;
+}
+.contacts .form .mail::before {
+  background: url(../img/form.png);
+  background-repeat: no-repeat;
+  background-position: 0 -14.4rem;
+}
+.contacts .form-btn {
+  width: 100%;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  border-color: #fff;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.contacts .form-btn:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #f8a25a;
+  border-color: transparent;
+}
+.contacts .form-btn:focus {
+  outline: none;
+}
+.contacts .form-btn:active {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #f79442;
+}
+
 /*# sourceMappingURL=style.css.map */
