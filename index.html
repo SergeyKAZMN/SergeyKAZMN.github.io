@@ -366,12 +366,79 @@
 					</form>
 					</div>
 				</div>
-				
-					
-			
 			</div>
+			<div class="container block-rev">
+				<div class="reviews">
+					<h2 class="reviews-title">Отзывы наших клиентов</h2>
+					<div class="reviews-slider" id="reviewSl">
+							<div class="reviews-slider-item">
+								<h5 class="client-name">Александра Холодная</h5>
+								<span class="servis-name">Услуга: интерьер детской</span>
+								<p class="client-review">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.В следующий раз обратимся к BRUME!</p>
+								<div class="avatar">
+									<div class="thumb">
+										<img src="img/avatar.jpg" alt="">
+									</div>
+									
+								</div>
+							</div>
+							<div class="reviews-slider-item">
+								<h5 class="client-name">Вера Петрова</h5>
+								<span class="servis-name">Услуга: интерьер детской</span>
+								<p class="client-review">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.В следующий раз обратимся к BRUME!</p>
+								<div class="avatar">
+									<div class="thumb">
+										<img src="img/avatar2.jpg" alt="">
+									</div>
+									
+								</div>
+							</div>
+							<div class="reviews-slider-item">
+								<h5 class="client-name">Генадий Иванов</h5>
+								<span class="servis-name">Услуга: интерьер детской</span>
+								<p class="client-review">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.В следующий раз обратимся к BRUME!</p>
+								<div class="avatar">
+									<div class="thumb">
+										<img src="img/avatar3.jpg" alt="">
+									</div>
+									
+								</div>
+							</div>
+							
+						
+		</div>
+				</div>
+		</div>
+		
 
 	</main>
+	<footer class="footer">
+		<div class="container">
+		<div class="row">
+			<div class="col footer-left">
+				<p class="copyright">
+					BRUME interior, 2017 &copy
+				</p>
+			</div>
+			<div class="col-md-2 footer-center text-center">
+				<div class="footer-logo">
+					<img src="img/lgf.png" alt="">
+				</div>
+				
+				<ul class="social">
+					<li><a href="" class="social-link social-link_vk"></a></li>
+					<li><a href="" class="social-link social-link_ins"></a></li>
+					<li><a href="" class="social-link social-link_fb"></a></li>
+				</ul>
+			</div>
+			<div class="col footer-right">
+				<p class="copyright">
+					HolodnayaDesign
+				</p>
+			</div>
+		</div>
+	</div>
+	</footer>
 	<!--Modal-->
 	<div class="modal-video" id="mVideo">
 		<span class="close" id="closeBtn">&times;</span>
@@ -397,7 +464,7 @@
         slidesToShow: 1,  
         slidesToScroll: 1, 
         dots:true,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:5000,
         arrows:false
     });
@@ -458,6 +525,24 @@
   		 	modal.style.display = "none";
   		 }
   	}
+  </script>
+  <script>
+  	 $(document).ready(function(){
+     $('#reviewSl').slick({ 
+     	
+        slidesToShow: 1,  
+        slidesToScroll: 1, 
+        dots:true,
+        autoplay:true,
+        autoplaySpeed:5000,
+        arrows:false,
+        centerMode: true,
+  centerPadding: '60px'
+         
+
+    });
+
+    });
   </script>
 
   
