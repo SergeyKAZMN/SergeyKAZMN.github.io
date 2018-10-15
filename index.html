@@ -6,6 +6,7 @@
 	 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:300,400,600,700,800|Roboto&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
@@ -16,20 +17,35 @@
 <body>
 	<header class="header">
 		<div class="header-block">
+			<div class="header-background"></div>
 			<div class="header-wrap">
 				<div class="header-block-nav">
 					<div class="ic-menu">
 						<img src="img/ham.png" alt="" width="30" height="25">
+
 					</div>
-					 <ul class="nav-menu">
+					 <ul class="nav-menu ">
+					 	<li><span class="close" id="closemenu">&times;</span></li>
+					 	
 									<li><a href="#">ГЛАВНАЯ</a></li>
 									<li><a href="#">ПРЕИМУЩЕСТВА</a></li>
 									<li><a href="#">ПОРТФОЛИО</a></li>
 									<li><a href="#">НАШИ УСЛУГИ</a></li>
 									<li><a href="#">ОТЗЫВЫ</a></li>
 									<li><a href="#">КОНТАКТЫ</a></li>
+									<li class="nav-menu-social">
+										<ul class="social">
+											<li><a href="#" class="social-link social-link_vk"></a></li>
+											<li><a href="#" class=" social-link social-link_ins"></a></li>
+											<li><a href="#"class="social-link social-link_fb"></a></li>
+				                     </ul>
+				                 </li>
+
 							   </ul>
-					<div class="logo"></div>
+					<div class="logo">
+						<a href="#" ><img src="img/lg320.png" alt=""></a>
+					</div>
+
 				</div>
 				<div class="header-promo">
 					<h1 class="header-promo_title">Дизайн интерьеров </h1>
@@ -53,9 +69,8 @@
 				
 				
 			</div>
-
-			
-
+		</div>
+		<div class="wrap-slider">
 			<div class="slider" id="slideone">
 				    <div class="slider-box">
 				    	<img src="img/sl-1.jpg" alt="" class="slider_img">
@@ -71,40 +86,31 @@
 				    </div>
 
             </div>
-            <!--
-            <div class="slider-nav" style="transform: none !important;">
-	            <a href="#" class="slider-togl"></a>
-	            <a href="#" class="slider-togl"></a>
-	            <a href="#" class="slider-togl"></a>
-	            <a href="#" class="slider-togl"></a>
-            </div>-->
-
-            
 		</div>
 	</header>
 	<main class="main">
 		<div class="container">
 			<div class="features">
 				<div class="row justify-content-start">
-					<div class="col  align-self-start">
+					<div class=" col-12 col-md-6 col-xl-3 align-self-md-start  wow fadeInUp" data-wow-delay="0.5s" >
 						  <span class="features_number">01</span>
 						  <h3 class="features_title">Берем весь ремонт на себя</h3>
 						  <p class="features_description">Заботы по дизайну и отделке помещения возьмем на себя, останется дождаться завершения работ и наслаждаться результатом
 						  </p>
 					</div>
-					<div class="col align-self-end">
-						  <span class="features_number">02</span>
+					<div class="  col-12  col-md-6 col-xl-3 align-self-md-end wow fadeInDown">
+						  <span class="features_number ">02</span>
 						  <h3 class="features_title">Мы - профессионалы своего дела</h3>
 						  <p class="features_description">Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и тренинги а студия уже реализовала свыше 1000 дизайн-проектов
 						  </p>
 					</div>
-					<div class="col">
+					<div class="  col-12  col-md-6 col-xl-3 align-self-md-start  wow fadeInUp "  data-wow-delay="0.5s">
 						  <span class="features_number">03</span>
 						  <h3 class="features_title">Наши проекты индивидуальны</h3>
 						  <p class="features_description">Каждый, созданный студией, интерьер - индивидуальное         и максимально продуманное решение для каждого вида помещения
 						  </p>
 					</div>
-					<div class="col align-self-end">
+					<div class=" col-12  col-md-6 col-xl-3 align-self-md-end  wow fadeInDown">
 						  <span class="features_number ">04</span>
 						  <h3 class="features_title">Рабатаем на выгодных условиях</h3>
 						  <p class="features_description">Ценовая политика студии очень лояльна,  мы осуществляем контроль всего процесса работы  и получаем результат который делает клиентов счастивыми
@@ -148,7 +154,9 @@
 				        					<span class="img-title_botom">Дизайн интерьера</span>
 				        				</div>
 				        				<img src="img/ac2.jpg" alt="">
+				        				
 				        			</div>
+
 
 				        			<div class="acordion-item">
 				        				<div class="img-title">
@@ -170,7 +178,10 @@
 				        		<button class="next" id="next-btn"></button>
 				        </div>
 				       
-				    </div>            
+				    </div>  
+				    <div class="img-title-adaptiv">
+				        					<p>Дизайн интерьера гостиной</p>
+				        				</div>          
       
 			</div>
 			<div class="servis">
@@ -296,7 +307,7 @@
 		</div>
 			<div class="aboutus">
 				<div class="aboutus-control">
-					<button class="aboutus-btn" id="playBtn"></button>
+					<button class="aboutus-btn " id="playBtn" ></button>
 				<p class="aboutus-paragraph">О  студии дизайна интерьеров BRUME за 2 минуты</p>
 				</div>
 			</div>
@@ -305,7 +316,7 @@
 				
 				<h2 class="levelsWork-title">Этапы работы</h2>
 				<div class="row">
-					<div class="col">
+					<div class="col wow flipInX" data-wow-duration="1s" >
 						<div class="level">
 							<span class="level-index">1</span>
 							<h4 class="level-title">Консультация</h4>
@@ -317,7 +328,7 @@
 							<p class="level-paragraph">Создаем концепцию на основе пожеланий клиента, его образов        и ощущений.  подбираем мебель.</p>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col wow flipInX" data-wow-duration="1s">
 						<div class="level">
 							<span class="level-index">2</span>
 							<h4 class="level-title">Техническое задание</h4>
@@ -329,7 +340,7 @@
 							<p class="level-paragraph">Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным нормам..</p>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col wow flipInX" data-wow-duration="1s">
 						<div class="level">
 							<span class="level-index">3</span>
 							<h4 class="level-title">Замеры и планировка</h4>
@@ -346,7 +357,7 @@
 			</div>
 			<div class="contacts">
 				<div class="row">
-					<div class="col-md-6 contacts-container">
+					<div class=" col-12 col-md-6 contacts-container">
 						<form action="#" class="form">
 						
 							<h2 class="form-title">Мечтаете об интерьере от BRUME?</h2>
@@ -431,7 +442,7 @@
 					<li><a href="" class="social-link social-link_fb"></a></li>
 				</ul>
 			</div>
-			<div class="col footer-right">
+			<div class="col-12 col-md-5 footer-right">
 				<p class="copyright">
 					HolodnayaDesign
 				</p>
@@ -447,18 +458,18 @@
 		<iframe width="600" height="400" src="https://www.youtube.com/embed/Q8_qZLoQ0kQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	</div>
 	</div>
-
-			
-		
-	                          
-								
+						
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+</script>
  
   
   
-    <script type="text/javascript">
+ <script type="text/javascript">
     $(document).ready(function(){
      $('#slideone').slick({ 
         slidesToShow: 1,  
@@ -466,7 +477,35 @@
         dots:true,
         autoplay:false,
         autoplaySpeed:5000,
-        arrows:false
+        arrows:false,
+         responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1,
+        dots:false,
+         autoplay:true,
+        autoplaySpeed:5000
+      }
+    },
+    {
+      breakpoint: 320,
+      settings: {
+        arrows: false,
+        dots:false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1,
+         dots:false,
+         autoplay:true,
+        autoplaySpeed:5000
+      }
+    }
+  ]
+       
     });
 
     });
@@ -474,12 +513,16 @@
     $(document).ready(function() {
     	var menuBtn = $('.ic-menu');
     	var menu = $('.nav-menu');
+    	var close = $('#closemenu');
 
     	menuBtn.on('click',  function(event) {
     		event.preventDefault();
     		menu.toggleClass('nav-menu_active');
     		/* Act on the event */
     	});
+    	close.on('click', function(event){
+    		menu.removeClass('nav-menu_active');
+    	})
     	
     });
 
@@ -535,6 +578,29 @@
         dots:true,
         autoplay:false,
         arrows:false,
+        responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1,
+        dots:false
+      }
+    },
+    {
+      breakpoint: 320,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '10px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+         dots:false
+      }
+    }
+  ]
         
 
          
