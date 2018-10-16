@@ -1307,22 +1307,7 @@ body{
 	&-contact{
 		display: none;
 	}
-/*
-	&-background{
-		 min-height: 88rem;
-	background-image: url(../img/hedB.jpg);
-	background-repeat:no-repeat;
-	  -webkit-background-size:117% 84%;
-	          background-size:117% 84%;
-			background-position:0% -8%;
-	        position: absolute;
-	        top: 0;
-	        left: 0;
-	        bottom: 0;
-	        right: 0;
-	        z-index: -1;
 
-	}*/
 	&-promo{
 		padding-left: 0;
 		padding-top: 3.5rem;
@@ -1706,4 +1691,124 @@ body{
 		.header-promo {
     padding-top: 14.5rem;
 }
+}
+@media screen and (min-width:768px) and (max-width:960px){
+
+	.main .features .row {
+    min-height: 113rem;
+}
+.wrap .list-category {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+.wrap .category {
+    margin-right: 5rem;
+}
+.img-title-adaptiv {
+    left: 35%;
+   
+}
+.acordion-item {
+    
+    &:nth-child(4){
+    	width: 80%;
+    	.img-title{
+    		display:none;
+    	}
+    }
+}
+.servis-title {
+    padding-left: 3rem;
+}
+.tab-controls ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+}
+.tab-item{
+	&:nth-child(4){
+		padding-right: 8rem;
+	}
+}
+.tab-description_title {
+    display: block;
+}
+.tab-description_index{
+	display: block;
+}
+.aboutus-control {
+    left: 20%;
+}
+.modal-video-body {
+    margin-left: 0%;
+}
+.levelsWork-title {
+    text-align: inherit;
+    font-size: 4.5rem;
+}
+.levelsWork .level-index {
+    display: inline-block;
+}
+.level {
+    margin-left: 1rem;
+}
+.levelsWork .level-paragraph {
+    padding-left: 4.5rem;
+    
+}
+.contacts .form-title {
+    font-size: 4.5rem;
+}
+.contacts .form { 
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+.contacts .form .icon{
+	&::before{
+		display: block;
+	}
+}
+.avatar {
+    top: 5rem;
+    right: -6rem;
+}
+
+.reviews-slider-item {
+    margin: 0 8rem;
+        padding: 3.5rem 12rem 3.5rem 5.5rem;
+}
+.footer .row {
+   
+    -webkit-box-orient: horizontal;
+   
+    -webkit-box-direction: normal;
+   
+    -webkit-flex-direction: row;
+   
+        -ms-flex-direction: row;
+   
+            flex-direction: row;
+}
+.footer-left {
+    -webkit-box-ordinal-group: unset;
+    -webkit-order: unset;
+        -ms-flex-order: unset;
+            order: unset;
+    -webkit-box-pack: inherit;
+    -webkit-justify-content: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+}
+
 }

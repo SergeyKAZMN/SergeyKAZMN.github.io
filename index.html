@@ -191,11 +191,12 @@
 				<div class="tabs">
 					<div class="row">
 						
-				<div class="col-md-3 tab-controls">
-					<ul>
+				<div class="col-md-12 col-lg-3 tab-controls">
+					<ul >
 						<li class="tab-item ">Дизайн жилого помещения</li>
 						<li class="tab-item  ">Дизайн отельных  комнат</li>
 						<li class="tab-item  ">Дизайн коммерческих объектов</li>
+
 						<li class="tab-item  ">Ремонт под ключ</li>
 						<li class="tab-item  ">Отделочные работы</li>
 						<li class="tab-item  ">Выезд дизайнера на дом</li>
@@ -316,48 +317,59 @@
 				
 				<h2 class="levelsWork-title">Этапы работы</h2>
 				<div class="row">
-					<div class="col wow flipInX" data-wow-duration="1s" >
+					<div class="col-lg-4 col-md-6 wow flipInX" data-wow-duration="1s" >
 						<div class="level">
 							<span class="level-index">1</span>
 							<h4 class="level-title">Консультация</h4>
 							<p class="level-paragraph">Обсуждаем задачи и пожелания, предлагаем варианты дизайна интерьера, оговариваем сроки реализации.</p>
 						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 wow flipInX" data-wow-duration="1s">
+						<div class="level">
+							<span class="level-index">2</span>
+							<h4 class="level-title">Техническое задание</h4>
+							<p class="level-paragraph">Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 wow flipInX" data-wow-duration="1s">
+						<div class="level">
+							<span class="level-index">3</span>
+							<h4 class="level-title">Замеры и планировка</h4>
+							<p class="level-paragraph">Фиксируем размеры стен, окон, плинтусов, дверных проемов  для эффективной работы</p>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 wow flipInX" data-wow-duration="1s">
 						<div class="level">
 							<span class="level-index">4</span>
 							<h4 class="level-title">Дизайн-концепция</h4>
 							<p class="level-paragraph">Создаем концепцию на основе пожеланий клиента, его образов        и ощущений.  подбираем мебель.</p>
 						</div>
 					</div>
-					<div class="col wow flipInX" data-wow-duration="1s">
-						<div class="level">
-							<span class="level-index">2</span>
-							<h4 class="level-title">Техническое задание</h4>
-							<p class="level-paragraph">Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта.</p>
-						</div>
+						<div class="col-lg-4 col-md-6 wow flipInX" data-wow-duration="1s">
 						<div class="level">
 							<span class="level-index">5</span>
 							<h4 class="level-title">3D Визуализация</h4>
 							<p class="level-paragraph">Создаем 3d визуализацию, собираем пакет чертежей соответствующий строительным нормам..</p>
 						</div>
 					</div>
-					<div class="col wow flipInX" data-wow-duration="1s">
-						<div class="level">
-							<span class="level-index">3</span>
-							<h4 class="level-title">Замеры и планировка</h4>
-							<p class="level-paragraph">Фиксируем размеры стен, окон, плинтусов, дверных проемов  для эффективной работы</p>
-						</div>
+
+					<div class="col-lg-4 col-md-6 wow flipInX" data-wow-duration="1s">
+
 						<div class="level">
 							<span class="level-index">6</span>
 							<h4 class="level-title">Комплектация интерьера</h4>
 							<p class="level-paragraph">Подбираем мебель, отделочные материалы, светильники и текстиль. Декорируем интерьер.</p>
 						</div>
 					</div>
+					
+				
 				</div>
 				</div>
 			</div>
 			<div class="contacts">
 				<div class="row">
-					<div class=" col-12 col-md-6 contacts-container">
+					<div class=" col-12 col-lg-6 contacts-container">
 						<form action="#" class="form">
 						
 							<h2 class="form-title">Мечтаете об интерьере от BRUME?</h2>
@@ -487,8 +499,7 @@
         centerPadding: '0px',
         slidesToShow: 1,
         dots:false,
-         autoplay:true,
-        autoplaySpeed:5000
+         
       }
     },
     {
@@ -500,8 +511,7 @@
         centerPadding: '0px',
         slidesToShow: 1,
          dots:false,
-         autoplay:true,
-        autoplaySpeed:5000
+        
       }
     }
   ]
@@ -586,7 +596,9 @@
         centerMode: true,
         centerPadding: '0px',
         slidesToShow: 1,
-        dots:false
+        dots:true,
+         autoplay:false,
+        autoplaySpeed:5000
       }
     },
     {
@@ -597,7 +609,9 @@
         centerPadding: '10px',
         slidesToShow: 1,
         slidesToScroll: 1,
-         dots:false
+         dots:false,
+          autoplay:true,
+        autoplaySpeed:5000
       }
     }
   ]
