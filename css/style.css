@@ -1128,12 +1128,6 @@ body {
     display: none;
   }
 
-  .header {
-    /*
-    	.slider{
-    		display: none;
-    	}*/
-  }
   .header .container {
     margin: 0;
   }
@@ -1491,6 +1485,11 @@ body {
     justify-content: center;
   }
 }
+@media screen and (min-width: 384px) {
+  .header-promo {
+    padding-top: 5.7rem;
+  }
+}
 @media screen and (min-width: 390px) and (max-width: 450px) {
   .header-promo {
     padding-top: 6rem;
@@ -1660,6 +1659,72 @@ body {
     -webkit-justify-content: inherit;
     -ms-flex-pack: inherit;
     justify-content: inherit;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 960px) {
+  .header-promo {
+    padding-top: 6rem;
+    padding-left: 0.5rem;
+  }
+
+  .header-promo_title {
+    font-size: 4.5rem;
+  }
+
+  .header-promo_descript {
+    margin: 0 0 6rem;
+  }
+
+  .main .features .row {
+    min-height: 97rem;
+  }
+
+  .acordion-item:nth-child(2) {
+    width: 98%;
+  }
+  .acordion-item:nth-child(2) .img-title {
+    display: none;
+  }
+
+  .acordion-item:nth-child(4) {
+    width: inherit;
+  }
+
+  .tab-controls ul {
+    display: block;
+  }
+
+  .tab-item {
+    margin-bottom: 3rem;
+  }
+
+  .tab-description_title {
+    padding-left: 1rem;
+  }
+
+  .tab-description_paragraph {
+    padding-left: 1rem;
+  }
+
+  .aboutus-control {
+    left: 25%;
+  }
+
+  .modal-video-body {
+    margin-left: 15%;
+  }
+
+  .modal-video .close {
+    margin-right: 2%;
+  }
+
+  .contacts .contacts-container {
+    background-color: rgba(17, 37, 55, 0.86);
+    left: 0%;
+  }
+
+  .contacts .form input {
+    background-color: rgba(17, 37, 55, 0.14);
   }
 }
 
